@@ -18,7 +18,11 @@ public class BuscaMinas {
             }
         }
 
-        tablero[0][4] = "*";
+        
+        int filaMina = (int)(Math.random() * 5);   
+        int colMina = (int)(Math.random() * 7);   
+
+        tablero[filaMina][colMina] = "*";
 
         while (!salida) {
 
@@ -32,7 +36,7 @@ public class BuscaMinas {
 
             System.out.println("----------------");
 
-            if (tablero[x - 1][y - 1] == "*") {  
+            if (tablero[x - 1][y - 1] == "*") {
                 visible[x - 1][y - 1] = "*";
                 System.out.println("Mina!");
                 salida = true;
