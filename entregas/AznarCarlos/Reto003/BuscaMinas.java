@@ -28,10 +28,10 @@ public class BuscaMinas {
 
             imprimirTablero(visible);
 
-            System.out.println("Ingrese X (1-5)");
+            System.out.println("Ingrese Linea vertical (1-5)");
             int x = sc.nextInt();
 
-            System.out.println("Ingrese Y (1-7)");
+            System.out.println("Ingrese Liena horizontal (1-7)");
             int y = sc.nextInt();
 
             System.out.println("----------------");
