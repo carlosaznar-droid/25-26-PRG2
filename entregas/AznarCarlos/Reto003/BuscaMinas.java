@@ -11,5 +11,12 @@ public class BuscaMinas {
 
 		boolean salida = false;
 
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 7; j++) {
+				tablero[i][j] = "-";
+				visible[i][j] = "-";
+			}
+		}
+
 	}
 }
