@@ -20,9 +20,9 @@ public class BuscaMinas {
 
         
         int filaMina = (int)(Math.random() * 5);   
-        int colMina = (int)(Math.random() * 7);   
+        int columnaMina = (int)(Math.random() * 7);   
 
-        tablero[filaMina][colMina] = "*";
+        tablero[filaMina][columnaMina] = "*";
 
         while (!salida) {
 
@@ -38,11 +38,11 @@ public class BuscaMinas {
 
             if (tablero[x - 1][y - 1] == "*") {
                 visible[x - 1][y - 1] = "*";
-                System.out.println("Mina!");
+                System.out.println("Vaya has encontrado la mina ");
                 salida = true;
             } else {
                 visible[x - 1][y - 1] = ".";
-                System.out.println("Libre!");
+                System.out.println("Esta Casilla esta vacia");
             }
         }
 
