@@ -1,4 +1,4 @@
-package Entregas.aznarCarlos.Reto001;
+package entregas.AznarCarlos.Reto001;
 import java.util.Scanner;
 
 public class GestorTareas {
