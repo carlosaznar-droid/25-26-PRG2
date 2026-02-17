@@ -18,7 +18,6 @@ public class BuscaMinas {
             }
         }
 
-       
         tablero[0][4] = "*";
 
         while (!salida) {
@@ -33,7 +32,7 @@ public class BuscaMinas {
 
             System.out.println("----------------");
 
-            if (tablero[x - 1][y - 1] == "*") {   
+            if (tablero[x - 1][y - 1] == "*") {  
                 visible[x - 1][y - 1] = "*";
                 System.out.println("Mina!");
                 salida = true;
@@ -53,5 +52,19 @@ public class BuscaMinas {
         System.out.println("================");
         System.out.print("  ");
 
-	}
+        for (int i = 1; i <= 7; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i < 5; i++) {
+            System.out.print((i + 1) + " ");
+            for (int j = 0; j < 7; j++) {
+                System.out.print(tablero[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("================");
+    }
 }
