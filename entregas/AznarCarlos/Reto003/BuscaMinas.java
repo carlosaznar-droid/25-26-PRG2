@@ -18,5 +18,30 @@ public class BuscaMinas {
 			}
 		}
 
+		tablero[0][4] = "*";
+
+		while (!salida) {
+
+			imprimirTablero(visible);
+
+			System.out.println("Ingrese X");
+			int x = sc.nextInt();
+
+			System.out.println("Ingrese Y");
+			int y = sc.nextInt();
+
+			System.out.println("----------------");
+
+			if (tablero[x - 1][y - 1] == "*") {
+				visible[x - 1][y - 1] = "*";
+				System.out.println("Mala suerte has encontrado una mina");
+				salida = true;
+			} else {
+				visible[x - 1][y - 1] = ".";
+				System.out.println("Esta Libre no hay mina");
+			}
+		}
+
+		sc.close();
 	}
 }
