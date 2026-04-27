@@ -34,6 +34,13 @@ class Carrera {
         dibujarCarril(caballo2);
         System.out.println("----------------------------------------------\n");
     }
+     private void dibujarCarril(int posicion) {
+        for (int i = 0; i < posicion; i++) {
+            System.out.print(" ");
+        }
+        System.out.println(";-;'");
+    }
+    
 
     
     
