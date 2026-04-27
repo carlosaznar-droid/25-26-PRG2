@@ -23,11 +23,18 @@ class Carrera {
 
         mostrarResultado();
     }
-    
+
      private void avanzarCaballos() {
         caballo1 += (int) (Math.random() * 3); 
         caballo2 += (int) (Math.random() * 3);
     }
+      private void mostrarPista() {
+        System.out.println("----------------------------------------------");
+        dibujarCarril(caballo1);
+        dibujarCarril(caballo2);
+        System.out.println("----------------------------------------------\n");
+    }
+
     
     
 }
