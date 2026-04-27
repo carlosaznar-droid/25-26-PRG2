@@ -40,6 +40,13 @@ class Carrera {
         }
         System.out.println(";-;'");
     }
+     private void pausa() {// Esto me salio con la ia cuando me estanque  no se muy bien como funciona 
+        try {
+            Thread.sleep(300); 
+        } catch (InterruptedException e) {
+           
+        }
+    }
     
 
     
