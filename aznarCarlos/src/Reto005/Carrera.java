@@ -47,6 +47,15 @@ class Carrera {
            
         }
     }
+     private void mostrarResultado() {
+        if (caballo1 >= meta && caballo2 >= meta) {
+            System.out.println("¡Es un EMPATE!");
+        } else if (caballo1 >= meta) {
+            System.out.println("Ganó el CABALLO 1");
+        } else {
+            System.out.println("Ganó el CABALLO 2");
+        }
+    }
     
 
     
