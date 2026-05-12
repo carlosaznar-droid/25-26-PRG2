@@ -27,7 +27,10 @@ banco = -1;
 }
 public void reiniciarBanco(){
     banco = 0;
-}public voud blackjack(){
+}public voud blackJack(){
 banco += apuesta * 1.5;
+apuesta = 0;
+}
+public void empate(){
 apuesta = 0;
 }
