@@ -162,6 +162,17 @@ public void imprimirEstado() {
     }
     System.out.println("Crupier, mano actual: " + crupier.mostrarMano());
 }
+public void imprimirDinero(){
+    for(int i = 0; i<usuarios; i++){
+        if(jugadores[i].getSaldo()>0){
+            System.out.println(jugadores[i].getnombre()+ ", saldo final: " + jugadores[i].getSaldo()); 
+        }
+        if(jugadores[i].getSaldo() == 0){
+            System.out.println(jugadores[i].getNombre() + ", te has quedado sin saldo. Gracias por jugar.");
+        jugadores[i].salirDelJuego();
+        }
+    }
+}
 
 }
 }
