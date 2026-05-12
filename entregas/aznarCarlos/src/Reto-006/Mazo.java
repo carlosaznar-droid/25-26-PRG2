@@ -21,5 +21,16 @@ public class Mazo{
         }
         siguienteCarta = 0;
 }
+private void comprobarIndice(int indice){
+    if (indice<0 || indice>=52){
+        throw new IndexOutOfBoundsException("El índice debe estar entre 0 y 51");
+    }
+}
+public String toString(){
+    String texto = "";
 
+    for (int i=0; i<baraja.length; i++){
+        texto += baraja[i].toString() + "";
+    }
+   return texto;
 }
