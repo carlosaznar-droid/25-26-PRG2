@@ -40,6 +40,20 @@ public class BlackJackGame {
         baraja.barajar();
 
     }
-    
+    public void obtenerApuestas(){
+int ValorApuesta;
+
+for(int i=0; i<usuarios; i++){
+    if(jugadores[i].getSaldo() > 0) {
+        do {
+            System.out.print(jugadores[i].getNombre() + ", ingrese su apuesta (saldo disponible: " + jugadores[i].getSaldo() + "): ");
+            ValorApuesta = entrada.nextInt();
+            jugadores[i].establecerApuesta(ValorApuesta);
+        } while (!(ValorApuesta > 0 && ValorApuesta <= jugadores[i].getSaldo()));
+  
+System.out.println("";
+    }
+
+    }
        
 }   
