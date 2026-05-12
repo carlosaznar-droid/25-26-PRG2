@@ -14,5 +14,8 @@ public class Jugador{
 banco -= apuesta;
 apuesta = 0;
     }
-    
+    public void ganar(){
+banco += apuesta;
+apuesta = 0;
+    }
 }
