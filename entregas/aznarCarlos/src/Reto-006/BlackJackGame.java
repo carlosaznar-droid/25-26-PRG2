@@ -173,6 +173,12 @@ public void imprimirDinero(){
         }
     }
 }
+public void limpiarManos(){
+    for(int i=0 ; i< usuarios; i++){
+        jugadores[i].limpiarMano();
+    }
+    crupier.limpiarMano();
+}
 
 }
 }
