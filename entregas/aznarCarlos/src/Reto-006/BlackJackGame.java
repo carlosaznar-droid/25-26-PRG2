@@ -198,6 +198,23 @@ public boolean jugarDeNuevo(){
     }
     return estadoJuego;
 }
+public boolean forzamosFin(){
+    boolean fin=false;
+    int contadorFin = 0;
+
+    for(int i=0;i<usuarios;i++){
+        if(jugadores[i].getSaldo() == -1){
+            contadorFin++;
+        }
+    }
+    if(contadorFin == usuarios){
+        fin = true;
+    }
+    if(fin){
+        System.out.println("Todos los jugadores se han quedado sin saldo. El juego ha terminado.");
+    }
+return fin;
+}
 
 }
 }
