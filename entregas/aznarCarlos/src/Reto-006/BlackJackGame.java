@@ -68,4 +68,29 @@ public void repartirCartas(){
     }
    
 }
+public void comprobarBlackjack(){
+    if (crupier.tieneBlackjack()) {
+        system.out.println("El crupier tiene Blackjack. Todos los jugadores pierden.");
+        for (int i = 0 ; i< usuarios; i++) {
+            if(jugadores[i].getTotal() == 21) {
+                system.out.println(jugadores[i].getNombre() + " tiene Blackjack. Empate con el crupier.");
+jugadores[i].push();
+}else {
+    System.out.println(jugadores[i].getNombre() + " pierde contra el crupier.");
+jugadores[i].perder();
+        }
+    }
+}else {
+    if (crupier.revisa()){
+        Sistem.out.println("El crupier revisa y no tiene el blacjack");
+
+    }
+    for(int i = 0;i<usuarios ; i++){
+        if (jugadores[i].getTotal() == 21) {
+            System.out.println(jugadores[i].getNombre() + " tiene Blackjack. Gana contra el crupier.");
+            jugadores[i]blackjack();
+       
+        }
+    }
+}
 }
