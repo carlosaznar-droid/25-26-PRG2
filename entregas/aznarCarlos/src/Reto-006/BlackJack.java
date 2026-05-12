@@ -1,17 +1,19 @@
 class BlackJack {
-    public static void main(String[] args) {
+ public static void main(String[] args) {
+ BlackJackGame mygame = new BlackJackGame();
 
-        private int jugador;
-        private int dealer;
-        private int banca = 21;
-        private int resultado;
-        
-        public BlackJack(int jugador, int dealer) {
-
-            this.jugador = jugador;
-            this.dealer = dealer;
-
-        }
-        
-      
+ mygame.empezarJuego();
+ do{
+    mygame.barajear();
+    mygame.ponerApuesta();
+    mygame.repartirCartas();
+    my.game.printStatus();
+    mygame.revisarBlackJack();
+    mygame.hitOrStand();
+    mygame.dealerPlays();
+    mygame.liquidarApuesta();
+    mygame.printDinero();
+    mygame.limpiarManos();
+ }while(mygame.jugarOtraVez());
+    }
 }
