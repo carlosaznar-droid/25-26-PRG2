@@ -51,9 +51,21 @@ for(int i=0; i<usuarios; i++){
             jugadores[i].establecerApuesta(ValorApuesta);
         } while (!(ValorApuesta > 0 && ValorApuesta <= jugadores[i].getSaldo()));
   
-System.out.println("";
-    }
+System.out.println("")
 
     }
        
 }   
+    }
+public void repartirCartas(){
+    for(int j =o; j<2; j++){
+        for(int i=0; i<usuarios; i++){
+            if(jugadores[i].getSaldo() > 0) {
+                jugadores[i].añadirCarta(baraja.siguienteCarta());
+            }
+        }
+         crupier.añadirCarta(baraja.siguienteCarta());
+    }
+   
+}
+}
