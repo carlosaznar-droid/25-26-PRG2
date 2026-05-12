@@ -49,3 +49,7 @@ poblic void barajar(){
     }
     siguienteCarta = 0;
 }
+public Carta obtenerCarta(int indice){
+    comprobarIndice(indice);
+    return baraja[indice];
+}
