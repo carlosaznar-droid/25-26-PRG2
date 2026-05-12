@@ -27,4 +27,17 @@ public class Dealer{
 public void agregarCarta(Carta carta){
     mano.agregarCarta(carta);
 }
+public String obtenerMano(boolean esCrupier,boolean ocutarCartaOculta){
+    String texto = "Cartas"+mano.toString(esCrupier,ocutarCartaOculta);
+    return texto;
+}
+public int getValorMano(){
+    return mano.getValor();
+}
+public void limpiarMano(){
+    mano.limpiarMano();
+}
+public boolean revisarCartaOculta(){
+   return mano.dealerrevisarCartaOculta();
+    }
 }
