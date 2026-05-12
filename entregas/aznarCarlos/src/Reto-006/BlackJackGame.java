@@ -179,6 +179,25 @@ public void limpiarManos(){
     }
     crupier.limpiarMano();
 }
+public boolean jugarDeNuevo(){
+    String comando;
+    char c;
+    boolean estadoJuego= true;
+
+    if(forzamosFin()){
+        estadoJuego = false;
+    }else{
+        do{
+            System.out.println("¿Desean jugar otra ronda? (S/N): ");
+            comando = entrada.next();
+            c = comando.toUpperCase().charAt(0);
+        }while (!(c == 'S' || c == 'N'));
+        if (c == 'N') {
+            estadoJuego = false;
+        }
+    }
+    return estadoJuego;
+}
 
 }
 }
