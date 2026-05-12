@@ -84,4 +84,16 @@ public String obtenerNombreValor(){
 
 		return nombre;
 	}
-    }
+public int obtenerValorNumerico(){
+    return this.valor;
+}
+public boolena compararPalo(Carta carta){
+    return this.palo == carta.identificarPalo();
+}
+public boolena compararValor(Carta carta){
+    return this.valor == carta.obtenerValorNumerico();
+}
+public boleana compararCarta(Carta carta){
+    return this.compararPalo(carta) && this.compararValor(carta);
+}
+}
