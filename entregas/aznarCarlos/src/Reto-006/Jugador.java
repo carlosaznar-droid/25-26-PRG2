@@ -34,3 +34,9 @@ apuesta = 0;
 public void empate(){
 apuesta = 0;
 }
+public void establecerApuesta(int nuevaApuesta){
+    apuesta = nuevaApuesta;
+}
+public void establecerNombre(String nuevoNombre){
+    nombre = nuevoNombre;
+}
