@@ -58,4 +58,6 @@ int total = 0;
     public void agregarCarta(Carta carta){
         mano[numCartas] = carta;
     }
-    
+    public void limpiarMano(){
+        numCartas = 0;
+    }
