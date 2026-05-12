@@ -46,3 +46,6 @@ public void obtenerNombre(){
 public int obtenerTotalMano(){
     return mano.obtenerTotal();
 }
+public int obtenerApuesta(){
+    return this.apuesta;
+}
