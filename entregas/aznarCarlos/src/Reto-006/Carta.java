@@ -21,3 +21,19 @@ if(nuevoPalo != 'C' && nuevoPalo != 'D' && nuevoPalo != 'T' && nuevoPalo != 'P')
 public String toString(){
     return NombrePalo() + " " + this.valor;
 }
+public String NombrePalo(){
+    switch(this.palo){
+        case 'C':
+            return "Corazones";
+        case 'D':
+            return "Diamantes";
+        case 'T':
+            return "Tréboles";
+        case 'P':
+            return "Picas";
+        default:
+            return "Palo desconocido";
+    }
+    return "Palo desconocido";
+}
+}
