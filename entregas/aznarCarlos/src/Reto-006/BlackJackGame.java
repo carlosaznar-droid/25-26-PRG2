@@ -154,6 +154,14 @@ public void liquidarApuesta(){
     }
 }
 }
+public void imprimirEstado() {
+    for (int i = 0; i < usuarios;i++){
+        if(jugadores[i].getSaldo()>0){
+            System.out.println(jugadores[i].getNombre()+ ", saldo actual: " + jugadores[i].mostrarMano());
+        }
+    }
+    System.out.println("Crupier, mano actual: " + crupier.mostrarMano());
+}
 
 }
 }
