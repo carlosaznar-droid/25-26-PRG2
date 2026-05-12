@@ -42,7 +42,7 @@ private void intercambiarCartas(int indice1, int indice2){
     baraja[indice1] = baraja[indice2];
     baraja[indice2] = temp;
 }
-poblic void barajar(){
+public void barajar(){
     for (int i=0; i<baraja.length; i++){
         int indiceAleatorio = (int)(Math.random() * 52);
         intercambiarCartas(i, indiceAleatorio);
