@@ -61,3 +61,10 @@ public boolean compararCon(Mazo otroMazo){
     }
     return true;
 }
+public Carta siguienteCarta(){
+    if (siguienteCarta >= baraja.length){
+        throw new IndexOutOfBoundsException("No hay más cartas en el mazo");
+    }
+    return baraja[siguienteCarta++];
+}
+}
