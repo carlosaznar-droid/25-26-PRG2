@@ -18,4 +18,7 @@ apuesta = 0;
 banco += apuesta;
 apuesta = 0;
     }
+    public void perder(){
+banco -= apuesta;   
+apuesta = 0
 }
