@@ -40,3 +40,9 @@ public void establecerApuesta(int nuevaApuesta){
 public void establecerNombre(String nuevoNombre){
     nombre = nuevoNombre;
 }
+public void obtenerNombre(){
+    return nombre;
+}
+public int obtenerTotalMano(){
+    return mano.obtenerTotal();
+}
