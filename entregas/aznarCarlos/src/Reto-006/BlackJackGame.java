@@ -215,6 +215,30 @@ public boolean forzamosFin(){
     }
 return fin;
 }
+public void finalizarJuego(){
 
+    int cantidadFinal;
+    String estadoFinal = "sin cambios";
+
+    System.out.println("");
+    for (int i = 0; i< usuarios; i++){
+        if(jugadores[i].getSaldo()==-1){
+            jugadores[i].reicibirSaldo();
+        }
+        cantidadFinal = jugadores[i].getSaldo() - 100;
+        if(cantidadFinal > 0){
+            estadoFinal = "ganancia de";
+            
+    }else if(cantidadFinal < 0){
+        estadoFinal = "pérdida de"; 
+}
+System.out.println(jugadores[i].getNombre()+ "termino el juego con"+ jugadores[1].getSaldo()+".");
+if(estadoFInal != "sin cambios"){
+    System.out.println("Esto representa una " + estadoFinal + " " + Math.abs(cantidadFinal) + " fichas.");
+}
+SYstem.out.println("");
+}
+System.out.println("Gracias por jugar al BlackJack. ¡Hasta la próxima!");
+}
 }
 }
