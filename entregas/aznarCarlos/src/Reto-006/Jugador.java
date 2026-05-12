@@ -7,4 +7,7 @@ public class Jugador{
         banco = 100;
         mano = new Mano();
     }
+    public int obtenerBanco(){
+        return banco;
+    }
 }
