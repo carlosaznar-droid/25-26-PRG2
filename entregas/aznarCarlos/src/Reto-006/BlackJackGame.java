@@ -36,6 +36,10 @@ public class BlackJackGame {
         }
     }
 
+    public void barajarCartas(){
+        baraja.barajar();
+
     }
+    
        
 }   
