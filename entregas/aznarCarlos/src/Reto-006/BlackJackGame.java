@@ -93,4 +93,33 @@ jugadores[i].perder();
         }
     }
 }
+<<<<<<< HEAD
+public void pedirCartaOPlantarse(){
+    string comando;
+    char c;
+
+    for(int i = 0; i<usuarios; i++){
+        if(jugadores[i].getSaldo() > 0) {
+            System.out.println();
+            System.out.println(jugadores[i].getname() + ", tu mano actual es: " + jugadores[i].mostrarMano());
+            
+            do{
+                do{
+                    System.out.print("¿Deseas 'Pedir' una carta o 'Plantarte'? (P/Pedir, S/Plantarse): ");
+                    comando = entrada.next();
+                    c = comando.toUpperCase().charAt(0);
+
+                }while (!(c == 'P' || c == 'S'));
+                if (c == 'P') {
+                    jugadores[i].añadirCarta(baraja.siguienteCarta());
+                    System.out.println("Tu mano actual es: " + jugadores[i].mostrarMano());
+                }
+            }while (c == 'P' && jugadores[i].calcularValorMano() < 21);
 }
+}
+}
+public void juegaCrupier(){}
+}
+=======
+}
+>>>>>>> eafdb82f81c191675497a65ed2d2174fc46f3dad
