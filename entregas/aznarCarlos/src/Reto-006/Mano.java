@@ -61,3 +61,8 @@ int total = 0;
     public void limpiarMano(){
         numCartas = 0;
     }
+    public boolean revisarCartaCrupier(){
+        int valor= mano[1].getValor();
+        return valor == 1 || valor >= 10;
+    }
+}
