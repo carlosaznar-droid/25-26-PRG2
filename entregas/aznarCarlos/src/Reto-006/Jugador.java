@@ -25,3 +25,6 @@ apuesta = 0
 public void elimnarDelJuego(){
 banco = -1;
 }
+public void reiniciarBanco(){
+    banco = 0;
+}
