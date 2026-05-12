@@ -52,3 +52,11 @@ public int obtenerApuesta(){
 public void agregarCarta(Carta Carta){
     mano.agregarCarta(Carta);
 }
+public String obtenerManoComoTexto(){
+    String texto = "Cartas:"+ mano.toString();
+    return texto;
+}
+public void limpiarMano(){
+    mano.limpiar();
+}
+}
