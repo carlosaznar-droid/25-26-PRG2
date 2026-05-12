@@ -34,3 +34,11 @@ public String toString(){
     }
    return texto;
 }
+private void intercambiarCartas(int indice1, int indice2){
+    comprobarIndice(indice1);
+    comprobarIndice(indice2);
+
+    Carta temp = baraja[indice1];
+    baraja[indice1] = baraja[indice2];
+    baraja[indice2] = temp;
+}
