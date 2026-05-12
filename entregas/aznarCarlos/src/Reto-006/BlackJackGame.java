@@ -129,6 +129,31 @@ public void juegaCrupier(){
         crupier.dealerJuega(baraja);
     }
 }
+public void liquidarApuesta(){
+
+    Sustem.out.println();
+
+    for(int i = 0; i< usuarios;i++){
+        if(jugadores[i].getSaldo()>0){
+            if (jugadores[i].getTotal() > 21) {
+                System.out.println(jugadores[i].getNombre() + " se ha pasado de 21. Pierde su apuesta.");
+                jugadores[i].perder();
+            } else if (crupier.getTotal() > 21) {
+                System.out.println("El crupier se ha pasado de 21. " + jugadores[i].getNombre() + " gana su apuesta.");
+                jugadores[i].ganar();
+            } else if (jugadores[i].getTotal() > crupier.getTotal()) {
+                System.out.println(jugadores[i].getNombre() + " tiene una mano mejor que el crupier. Gana su apuesta.");
+                jugadores[i].ganar();
+            } else if (jugadores[i].getTotal() == crupier.getTotal()) {
+                System.out.println(jugadores[i].getNombre() + " empata con el crupier. Recupera su apuesta.");
+                jugadores[i].push();
+            } else {
+                System.out.println(jugadores[i].getNombre() + " tiene una mano peor que el crupier. Pierde su apuesta.");
+                jugadores[i].perder();
+        }
+    }
+}
+}
 
 }
 }
