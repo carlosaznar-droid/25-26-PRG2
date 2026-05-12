@@ -55,4 +55,7 @@ int total = 0;
             return texto + "Total: " + total + textoAs;
         }
     }
+    public void agregarCarta(Carta carta){
+        mano[numCartas] = carta;
+    }
     
