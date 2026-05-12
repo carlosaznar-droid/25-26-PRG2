@@ -10,4 +10,9 @@ public class Jugador{
     public int obtenerBanco(){
         return banco;
     }
+    public void pasarse(){
+banco -= apuesta;
+apuesta = 0;
+    }
+    
 }
