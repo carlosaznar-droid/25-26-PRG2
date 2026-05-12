@@ -93,7 +93,6 @@ jugadores[i].perder();
         }
     }
 }
-<<<<<<< HEAD
 public void pedirCartaOPlantarse(){
     string comando;
     char c;
@@ -118,8 +117,18 @@ public void pedirCartaOPlantarse(){
 }
 }
 }
-public void juegaCrupier(){}
+public void juegaCrupier(){
+    boolean algunJugadorSigueEnJuego = false;
+
+    for (int i = 0;i < usuarios && !algunJugadorSigueEnJuego; i++) {
+        if (jugadores[i].getSaldo() > 0 && jugadores[i].calcularValorMano() <= 21) {
+            algunJugadorSigueEnJuego = true;
+        }
+    }
+    if(algunJugadorSigueEnJuego){
+        crupier.dealerJuega(baraja);
+    }
 }
-=======
+
 }
->>>>>>> eafdb82f81c191675497a65ed2d2174fc46f3dad
+}
