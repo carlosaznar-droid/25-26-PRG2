@@ -53,3 +53,11 @@ public Carta obtenerCarta(int indice){
     comprobarIndice(indice);
     return baraja[indice];
 }
+public boolean compararCon(Mazo otroMazo){
+    for (int i=0; i<baraja.length; i++){
+        if (!baraja[i].equals(otroMazo.obtenerCarta(i))){
+            return false;
+        }
+    }
+    return true;
+}
