@@ -49,3 +49,6 @@ public int obtenerTotalMano(){
 public int obtenerApuesta(){
     return this.apuesta;
 }
+public void agregarCarta(Carta Carta){
+    mano.agregarCarta(Carta);
+}
