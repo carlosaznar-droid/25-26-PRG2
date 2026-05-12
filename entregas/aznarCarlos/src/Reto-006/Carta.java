@@ -34,6 +34,54 @@ public String NombrePalo(){
         default:
             return "Palo desconocido";
     }
-    return "Palo desconocido";
+
 }
+public char identificarPalo(){
+    return this.palo;
 }
+public String obtenerNombreValor(){
+    String nombre = "Desconocido";
+
+		if (this.valor == 1) {
+			nombre = "As";
+		}
+		else if (this.valor == 2) {
+			nombre = "Dos";
+		}
+		else if (this.valor == 3) {
+			nombre = "Tres";
+		}
+		else if (this.valor == 4) {
+			nombre = "Cuatro";
+		}
+		else if (this.valor == 5) {
+			nombre = "Cinco";
+		}
+		else if (this.valor == 6) {
+			nombre = "Seis";
+		}
+		else if (this.valor == 7) {
+			nombre = "Siete";
+		}
+		else if (this.valor == 8) {
+			nombre = "Ocho";
+		}
+		else if (this.valor == 9) {
+			nombre = "Nueve";
+		}
+		else if (this.valor == 10) {
+			nombre = "Diez";
+		}
+		else if (this.valor == 11) {
+			nombre = "Jota";
+		}
+		else if (this.valor == 12) {
+			nombre = "Reina";
+		}
+		else if (this.valor == 13) {
+			nombre = "Rey";
+		}
+
+		return nombre;
+	}
+    }
